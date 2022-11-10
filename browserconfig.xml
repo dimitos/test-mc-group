@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square30x30logo src="/favicons/mstile-32x32.png?v=YAXJRNJXR9"/>
+            <square50x50logo src="/favicons/mstile-57x57.png?v=YAXJRNJXR9"/>
+            <square70x70logo src="/favicons/mstile-72x72.png?v=YAXJRNJXR9"/>
+            <square120x120logo src="/favicons/mstile-114x114.png?v=YAXJRNJXR9"/>
+            <square150x150logo src="/favicons/mstile-144x144.png?v=YAXJRNJXR9"/>
+            <square260x260logo src="/favicons/mstile-256x256.png?v=YAXJRNJXR9"/>
+            <TileColor>#ffffff</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>

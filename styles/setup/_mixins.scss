@@ -1,0 +1,50 @@
+@mixin to-width($max-width) {
+    @media (max-width: $max-width) {
+        @content;
+    }
+}
+@mixin from-width($min-width) {
+    @if $min-width == 0 {
+        @content;
+    } @else {
+        @media (min-width: $min-width) {
+            @content;
+        }
+    }
+}
+// from 568
+@mixin from-fablet {
+    @media (min-width: $fablet-width) {
+        @content;
+    }
+}
+// from 768
+@mixin from-tablet {
+    @media (min-width: $tablet-width) {
+        @content;
+    }
+}
+// from 1024
+@mixin from-apple {
+    @media (min-width: $apple-width) {
+        @content;
+    }
+}
+// from 1100
+@mixin from-laptop {
+    @media (min-width: $laptop-width) {
+        @content;
+    }
+}
+// from 1220
+@mixin from-notebook {
+    @media (min-width: $notebook-width) {
+        @content;
+    }
+}
+// from 1580
+@mixin from-desktop {
+    @media (min-width: $desktop-width) {
+        @content;
+    }
+}

@@ -1,0 +1,90 @@
+// .m-request {
+//     display: flex;
+//     align-items: center;
+//     width: 97vw;
+//     height: auto;
+//     max-width: 400px;
+//     min-width: 286px;
+//     max-height: 99vh;
+//     overflow: auto;
+//     @include from-tablet {
+//         max-width: 1100px;
+//     }
+// }
+// .m-request__wrap {
+//     width: 100%;
+//     max-height: 99vh;
+//     overflow: auto;
+//     padding: 44px 10px 24px;
+//     @include to-tablet {
+//         padding: 44px 30px 30px;
+//     }
+//     @include from-tablet {
+//         display: flex;
+//         flex-direction: row-reverse;
+//         justify-content: space-between;
+//         padding: 30px 40px;
+//     }
+//     @include from-desktop {
+//         padding: 36px 65px;
+//     }
+// }
+// .m-request__right {
+//     @include from-tablet {
+//         width: 48%;
+//         max-width: 424px;
+//     }
+// }
+// .m-request__image {    height: 100%;
+//     @include from-tablet {
+//         max-height: 404px;
+//     }
+// }
+// .m-request__left {
+//     margin-bottom: 50px;
+//     @include from-tablet {
+//         width: 50%;
+//         max-width: 440px;
+//         margin-bottom: 0;
+//     }
+// }
+// .m-request__title {
+//     margin-bottom: 16px;
+//     color: var(--color-4);
+//     @include to-tablet {
+//         margin-bottom: 10px;
+//     }
+//     @include from-desktop {
+//         margin-bottom: 20px;
+//     }
+//     @include from-desktop {
+//         margin-bottom: 24px;
+//     }
+// }
+// .m-request__form {
+//     width: 100%;
+// }
+// .m-request .input__check-text {
+//     margin-top: 16px;
+//     font-size: 16px;
+//     line-height: 22px;
+//     text-decoration-line: underline;
+//     color: #585858;
+//     @include from-tablet {
+//         margin-top: 20px;
+//     }
+//     @include from-desktop {
+//         margin-top: 24px;
+//     }
+// }
+// .m-request .form-btn {
+//     width: 100%;
+//     max-width: 284px;
+//     margin-top: 16px;
+//     @include from-tablet {
+//         margin-top: 20px;
+//     }
+//     @include from-desktop {
+//         margin-top: 24px;
+//     }
+// }

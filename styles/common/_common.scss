@@ -1,0 +1,97 @@
+html {
+    min-width: var(--html-min-width);
+    max-width: var(--html-max-width);
+}
+.container {
+    position: relative;
+    max-width: var(--container);
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 var(--html-mobile-edge-offset);
+}
+img {
+    vertical-align: top;
+    max-width: 100%;
+    border-style: none;
+    //transform: translate3d(0px, 0px, .001px);
+}
+a, button {
+    transition: color .3s ease;
+}
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+::placeholder {
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+    color: var(--color-3);
+}
+input[placeholder]          {text-overflow:ellipsis}
+input::-moz-placeholder     {text-overflow:ellipsis}
+input:-moz-placeholder      {text-overflow:ellipsis}
+input:-ms-input-placeholder {text-overflow:ellipsis}
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+::selection {
+    text-shadow: none;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    select:focus, textarea:focus, input:focus {
+        font-size: 16px;
+    }
+}
+.unselectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently  not supported by any browser */
+}
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0,0,0,0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+.image {
+    image-rendering: crisp-edges; // safari
+    image-rendering: -moz-crisp-edges; // fire fox
+    image-rendering: -webkit-optimize-contrast; // chrom
+    -ms-interpolation-mode: nearest-neighbor; // IE
+}
+::-webkit-scrollbar {
+    background-color: var(--bg-2);
+    height: 4px;
+    width: 4px;
+    border-radius: 5px;
+    @include from-notebook {
+        height: 10px;
+        width: 10px;
+        border-radius: 10px;
+    }
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--btn-3);
+    @include from-notebook {
+        border-radius: 10px;
+    }
+}
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    @include from-notebook {
+        border-radius: 10px;
+    }
+}

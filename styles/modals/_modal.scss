@@ -1,0 +1,119 @@
+.arcticmodal-overlay,
+.arcticmodal-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    -webkit-transform: translate3d(0, 0, 1000px);
+    transform: translate3d(0, 0, 1000px);
+}
+.arcticmodal-container {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-collapse: collapse;
+}
+.arcticmodal-container + .select2-container {
+    z-index: 1005;
+}
+*:first-child + html .arcticmodal-container {
+    height: 100%
+}
+.arcticmodal-container_i {
+    border-collapse: collapse;
+    height: 100%;
+    margin: 0 auto;
+}
+.arcticmodal-container_i2 {
+    margin: 0;
+    border: 0;
+    vertical-align: middle;
+}
+.arcticmodal-error {
+    padding: 20px;
+    border-radius: 10px;
+    background: #222222;
+    color: #ffffff;
+}
+.arcticmodal-loading {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background: #ffffff url(data:image/gif;base64,R0lGODlhIAAIAKECAEVojoSctMHN2QAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgADACwAAAAAIAAIAAACFZyPqcvtD6KMr445LcRUN9554kiSBQAh+QQFCgADACwCAAIAEgAEAAACD4xvM8DNiJRz8Mj5ari4AAAh+QQFCgADACwCAAIAHAAEAAACGJRvM8HNCqKMCCnn4JT1XPwMG9cJH6iNBQAh+QQFCgADACwMAAIAEgAEAAACD5RvM8HNiJRz8Mj5qri4AAAh+QQFCgADACwWAAIACAAEAAACBZSPqYsFACH5BAUUAAMALAAAAAAgAAgAAAIOnI+py+0Po5y02ouzPgUAOw==) no-repeat 50% 50%;
+}
+.intopModal {
+    position: relative;
+    transform: translateX(-105vw);
+    transition: transform .4s ease-in-out;
+    background-color: var(--bg-1);
+}
+.intopModal__wrap {
+    height: 0;
+    overflow: hidden;
+}
+.intopModal__inner {
+    position: relative;
+    height: 100%;
+}
+.intopModal__close {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 26px;
+    height: 26px;
+    padding: 7px;
+    fill: var(--btn-2);
+    cursor: pointer;
+    transition: transform .2s ease;
+    z-index: 100;
+    @include to-tablet {
+        width: 28px;
+        height: 28px;
+        right: 12px;
+        top: 12px;
+    }
+    @include from-desktop {
+        width: 34px;
+        height: 34px;
+        right: 20px;
+        top: 20px;
+    }
+}
+.intopModal__close svg {
+    width: 12px;
+    height: 12px;
+    @include to-tablet {
+        width: 14px;
+        height: 14px;
+    }
+    @include from-desktop {
+        width: 20px;
+        height: 20px;
+    }
+}
+.intopModal__close:hover {
+    -webkit-transform: rotateZ(90deg);
+    -ms-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+}
+.intopModal__close:focus {
+    outline: none;
+}
+@media only screen and (min-height: 681px) {
+    .arcticmodal-container_i2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media only screen and (min-width: 801px) {
+    .arcticmodal-container_i2 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.arcticmodal-overlay {
+    background-color: rgba(96, 96, 96, 0.2);
+    opacity: 1;
+}

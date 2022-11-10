@@ -1,0 +1,29 @@
+// .input-default {
+//     width: 100%;
+//     height: 61px;
+//     padding: 0 42px;
+//     font-weight: 500;
+//     font-size: var(--font-size-medium-semi);
+//     color: var(--color-5);
+//     background-color: var(--bg-1);
+//     border: 1px solid var(--color-4);
+//     border-radius: 10px;
+// }
+// .input-default:focus {
+//     border-color: var(--color-5);
+// }
+// .input__field {
+//     display: flex;
+// }
+// .input__fields-item + .input__fields-item {
+//     margin-top: 16px;
+//     @include from-tablet {
+//         margin-top: 20px;
+//     }
+//     @include from-desktop {
+//         margin-top: 24px;
+//     }
+// }
+// .input.input-error {
+//     border-color: var(--error) !important;
+// }

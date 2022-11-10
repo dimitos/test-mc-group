@@ -1,0 +1,40 @@
+:root {
+    /* ---------- Sizes ---------- */
+    --html-min-width: 375px;
+    --html-max-width: 1920px;
+    --html-mobile-edge-offset: 20px;
+    --container: 1716px;
+
+    /* ---------- Colors ---------- */
+    --color-1: #ffffff;
+    --color-2: #0c0c0c;
+    --color-3: #d9d9d9;
+
+    --btn-1: #ffffff;
+    --btn-2: #0c0c0c;
+    --btn-3: #3922c5;
+
+    --bg-1: #ffffff;
+    --bg-2: #f4f4f4;
+
+    --error: #e01818;
+
+    /* ---------- Typography ---------- */
+    --font-family: "Montserrat", sans-serif;
+
+    // --font-size-small-semi: 10px;
+    // --font-size-small-maxi: 12px;
+    --font-size-medium-mini: 14px;
+    --font-size-medium: 16px;
+    --font-size-medium-semi: 18px;
+    --font-size-medium-maxi: 20px;
+    --font-size-large-mini: 22px;
+    --font-size-large: 24px;
+    --font-size-large-semi: 26px;
+    --font-size-big-mini: 28px;
+    // --font-size-big: 30px;
+    --font-size-big-semi: 32px;
+    // --font-size-big-maxi: 34px;
+    --font-size-huge: 36px;
+    // --font-size-giant: 48px;
+}

@@ -1,0 +1,60 @@
+// .m-view {
+//     position: relative;
+//     width: 97vw;
+//     max-width: 1460px;
+//     min-width: 300px;
+//     height: 95vh;
+//     max-height: 800px;
+//     padding: 30px 20px;
+//     overflow: auto;
+//     @include from-tablet {
+//         padding: 43px;
+//     }
+// }
+// [data-view="video"] .m-view {
+//     background-color: #000000;
+// }
+// [data-view="video"] .intopModal__close {
+//     fill: #ffffff;
+// }
+// .m-view__wrap {
+//     display: flex;
+//     flex-direction: column;
+//     height: 100%;
+// }
+// .m-view__image {
+//     height: 100%;
+//     border-radius: 20px;
+//     overflow: hidden;
+// }
+// .m-view-slider {
+//     position: relative;
+//     z-index: 1;
+//     transform: translate3d(0, 0, 1px);
+//     -webkit-transform: translate3d(0, 0, 1px);
+//     height: 100%;
+// }
+// .m-view-slider .swiper {
+//     height: 100%;
+// }
+// .m-view__video {
+//     position: relative;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: contain;
+//     transform: scale(1.02);
+// }
+// .m-view__title {
+//     margin-bottom: 16px;
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 138%;
+//     @include from-tablet {
+//         margin-bottom: 20px;
+//         font-size: 20px;
+//     }
+//     @include from-desktop {
+//         margin-bottom: 24px;
+//         font-size: 24px;
+//     }
+// }

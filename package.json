@@ -1,0 +1,56 @@
+{
+    "name": "carrington",
+    "private": true,
+    "scripts": {
+        "serve": "gulp",
+        "build": "gulp build"
+    },
+    "browserslist": [
+        ">= .5%",
+        "last 1 major version",
+        "not dead",
+        "iOS >= 9",
+        "ChromeAndroid >= 40",
+        "Chrome >= 49",
+        "Samsung >= 7",
+        "Firefox >= 52",
+        "Opera >= 54",
+        "Android >= 4.4",
+        "OperaMobile >= 50",
+        "Edge >= 12",
+        "Safari >= 10",
+        "Explorer >= 11"
+    ],
+    "devDependencies": {
+        "@babel/core": "^7.17.2",
+        "@babel/preset-env": "^7.16.11",
+        "autoprefixer": "^10.4.2",
+        "babel-loader": "^8.2.3",
+        "browser-sync": "^2.27.7",
+        "browserslist": "^4.19.1",
+        "cssnano": "^5.0.17",
+        "gulp": "^4.0.2",
+        "gulp-babel": "^8.0.0",
+        "gulp-changed": "^4.0.3",
+        "gulp-concat": "^2.6.1",
+        "gulp-group-css-media-queries": "^1.2.2",
+        "gulp-postcss": "^9.0.1",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^5.1.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-terser": "^2.1.0",
+        "postcss": "^8.4.6",
+        "postcss-combine-media-query": "^1.0.1",
+        "rimraf": "^3.0.2",
+        "sass": "^1.49.7",
+        "through2": "^4.0.2",
+        "uuid": "^8.3.2",
+        "vinyl-named": "^1.1.0",
+        "webp-in-css": "^0.7.0",
+        "webpack": "^5.68.0",
+        "webpack-stream": "^7.0.0"
+    },
+    "dependencies": {
+        "core-js": "^3.21.0"
+    }
+}

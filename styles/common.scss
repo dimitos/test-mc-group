@@ -1,0 +1,11 @@
+@import './setup/reset';
+@import './setup/variables';
+@import './setup/custom-properties';
+@import './setup/mixins';
+
+@import './common/common';
+@import './common/components/page';
+@import './common/components/titles';
+@import './common/components/buttons';
+@import './common/components/input';
+@import './common/components/form';
