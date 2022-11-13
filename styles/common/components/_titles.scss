@@ -2,6 +2,27 @@
     font-weight: 700;
 }
 .title-h2 {
+    font-size: var(--font-size-big-mini);
+    line-height: 150%;
+    @include from-laptop {
+        font-size: var(--font-size-big-semi);
+    }
+    @include from-desktop {
+        font-size: var(--font-size-huge);
+    }
 }
 .title-h3 {
+    font-size: var(--font-size-large);
+    line-height: 150%;
+    @include from-notebook {
+        font-size: var(--font-size-large-semi);
+    }
+}
+.title-h4 {
+    font-weight: 500;
+    font-size: var(--font-size-medium);
+    line-height: 150%;
+    @include from-notebook {
+        font-size: var(--font-size-medium-semi);
+    }
 }

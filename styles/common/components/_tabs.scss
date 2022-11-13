@@ -1,0 +1,283 @@
+.tabs {
+    position: relative;
+    z-index: 1;
+    transform: translate3d(0, 0, 1px);
+    max-width: 846px;
+    .tabs-menu {
+        position: relative;
+        z-index: 2;
+        transform: translate3d(0, 0, 2px);
+        display: none;
+        @include from-fablet {
+            display: flex;
+        }
+    }
+    .tabs-menu__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 73px;
+        padding: 0 60px 0 20px;
+        font-weight: 500;
+        font-size: var(--font-size-medium-maxi);
+        line-height: 100%;
+        background-color: var(--bg-1);
+        border-radius: 20px 20px 20px 20px;
+        transition: background-color .2s ease, color .2s ease;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            right: 24px;
+            z-index: 3;
+            transform: translate3d(0, -50%, 3px);
+            width: 24px;
+            height: 24px;
+            background: url(/img/svg/tabs-arrow-down.svg) center / contain no-repeat
+        }
+        &.active::before {
+            transform: translate3d(0, -50%, 3px) rotate(180deg);
+        }
+        @include from-fablet {
+            padding: 0 20px;
+            background-color: var(--bg-4);
+            border-radius: 20px 20px 0px 0px;
+            &::before {
+                display: none;
+            }
+        }
+        @include from-tablet {
+            padding: 0 24px;
+            font-size: var(--font-size-large-mini);
+        }
+        &:not(.active) {
+            cursor: pointer;
+        }
+        &.active {
+            color: var(--color-3);
+            background-color: var(--bg-1);
+        }
+
+        .tabs-menu__item-second {
+            margin-top: 20px;
+        }
+    }
+    @media (hover: hover) {
+        .tabs-menu__item:hover {
+            color: var(--color-3);
+            background-color: var(--bg-1);
+        }
+    }
+    .tabs-menu__item-second {
+        margin-top: 20px;
+        @include from-fablet {
+            margin: 0;
+        }
+    }
+    .tabs-list {
+        margin-top: -1px;
+        .tabs-menu__item {
+            @include from-fablet {
+                display: none;
+            }
+        }
+    }
+    .tabs-item {
+        position: relative;
+        z-index: 3;
+        transform: translate3d(0, 0, 3px);
+        margin-top: -20px;
+        @include from-fablet {
+            margin-top: 0px;
+        }
+        .tabs-item__wrap {
+            padding: 50px 20px 30px;
+            background-color: var(--bg-1);
+            border-radius: 0px 0px 20px 20px;
+            overflow: hidden;
+            @include from-fablet {
+                padding: 35px 40px;
+                border-radius: 0px 20px 20px 20px;
+            }
+            @include from-notebook {
+                padding: 40px 60px;
+            }
+        }
+    }
+    .tabs-item {
+        display: none;
+        &:nth-child(2) {
+            display: block;
+        }
+    }
+    .tabs-item__top {
+        margin-bottom: 31px;
+        padding-bottom: 29px;
+        border-bottom: 1px solid var(--bg-4);
+        @include from-fablet {
+            display: flex;
+            justify-content: space-between;
+        }
+        @include from-notebook {
+            margin-bottom: 41px;
+            padding-bottom: 39px;
+        }
+        .tabs-item__image {
+            max-width: 358px;
+            margin-bottom: 25px;
+            .image {
+                width: 100%;
+                max-width: 358px;
+                height: auto;
+                max-height: 100%;
+                object-fit: contain;
+                @include from-fablet {
+                    margin-left: -76px;
+                    width: 125%;
+                }
+                @include from-notebook {
+                    margin-left: -128px;
+                }
+            }
+            @include from-fablet {
+                width: 49%;
+                margin-bottom: 0;
+                padding-top: 14px;
+            }
+            @include from-tablet {
+                width: 301px;
+            }
+        }
+        .tabs-item__desc {
+            @include from-fablet {
+                width: 49%;
+            }
+            @include from-tablet {
+                flex: 1;
+                width: initial;
+            }
+        }
+        .tabs-item__title {
+            margin-bottom: 19px;
+            @include from-notebook {
+                margin-bottom: 21px;
+            }
+        }
+        .tabs-item__text {
+            margin-top: 16px;
+            font-size: var(--font-size-medium-mini);
+            line-height: 150%;
+            color: var(--color-5);
+            @include from-notebook {
+                font-size: var(--font-size-medium);
+            }
+        }
+    }
+    .tabs-item__middle {
+        margin-bottom: 30px;
+        @include from-notebook {
+            margin-bottom: 40px;
+        }
+        .tabs-item__subtitle {
+            margin-bottom: 14px;
+            @include from-notebook {
+                margin-bottom: 20px;
+            }
+        }
+        .tabs-item__spec {
+            margin: 0 0 30px 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 15px;
+            @include from-fablet {
+                grid-template-columns: 1fr 1fr;
+                column-gap: 20px;
+            }
+            @include from-tablet {
+                grid-template-columns: 280px auto;
+                row-gap: 16px;
+            }
+            @include from-notebook {
+                grid-template-columns: 270px auto;
+                column-gap: 30px;
+                margin: 0 0 40px 0;
+            }
+        }
+        .tabs-item__spec-item {
+            position: relative;
+            padding: 0 0 0 19px;
+            font-size: var(--font-size-medium-mini);
+            line-height: 150%;
+            color: var(--color-5);
+            @include from-notebook {
+                padding: 0 0 0 20px;
+                font-size: var(--font-size-medium);
+            }
+        }
+        .tabs-item__spec-icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .tabs-item__spec-item_pad {
+            padding: 0 0 0 26px;
+            @include from-notebook {
+                padding: 0 0 0 36px;
+            }
+            .tabs-item__spec-icon {
+                top: 2px;
+                width: 16px;
+                height: 16px;
+                @include from-notebook {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        .tabs-item__spec-form {
+            @include from-fablet {
+                display: flex;
+            }
+            .input__fields {
+                width: 100%;
+                @include from-fablet {
+                    max-width: 351px;
+                }
+            }
+            .form-btn {
+                width: 100%;
+                margin: 15px 0 0 0;
+                @include from-fablet {
+                    width: 128px;
+                    margin: 0 0 0 24px;
+                }
+            }
+        }
+    }
+    .tabs-item__bottom {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 30px 20px;
+        background: var(--bg-1);
+        box-shadow: 0px 10px 40px rgba(12, 12, 12, 0.1);
+        border-radius: 20px;
+        @include from-fablet {
+            justify-content: flex-start;
+            padding: 30px 36px;
+        }
+        .btn-ok {
+            width: calc(50% - 8px);
+            @include from-fablet {
+                width: 92px;
+                margin-right: 10px;
+            }
+        }
+        .btn-cancel {
+            width: calc(50% - 8px);
+            @include from-fablet {
+                width: 112px;
+            }
+        }
+    }
+}

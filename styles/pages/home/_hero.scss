@@ -9,14 +9,10 @@
 }
 .hero__title {
     margin-bottom: 50px;
-    font-size: var(--font-size-big-mini);
-    line-height: 150%;
     @include from-laptop {
         margin-bottom: 65px;
-        font-size: var(--font-size-big-semi);
     }
     @include from-desktop {
         margin-bottom: 80px;
-        font-size: var(--font-size-huge);
     }
 }

@@ -1,76 +1,47 @@
-// .btn-default {
-//     display: inline-flex;
-//     align-items: center;
-//     justify-content: center;
-//     height: 56px;
-//     padding: 5px 10px 6px;
-//     font-weight: 500;
-//     font-size: var(--font-size-medium-semi);
-//     white-space: nowrap;
-//     text-transform: uppercase;
-//     background-color: transparent;
-//     border: 1px solid transparent;
-//     border-radius: 20px;
-//     cursor: pointer;
-//     transition: all .2s ease
-// }
+.btn-default {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    padding: 5px 24px 6px;
+    font-size: var(--font-size-medium-mini);
+    white-space: nowrap;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: color .2s ease, border-color .2s ease, background-color .2s ease;
+    @include from-fablet {
+        font-size: var(--font-size-medium);
+    }
+}
 
-// // btn-bg-font/fill-border
-// .btn-green-white-green {
-//     color: var(--btn-1);
-//     background-color: var(--btn-4);
-//     border-color: var(--btn-4);
-//     &:hover {
-//         box-shadow: 0px 4px 20px 5px rgba(71, 172, 80, 0.5);
-//     }
-//     &:hover:active {
-//         background-color: var(--btn-5);
-//         border-color: var(--btn-5);
-//     }
-// }
-// .btn-yellow-black-yellow {
-//     color: var(--btn-2);
-//     background-color: var(--btn-3);
-//     border-color: var(--btn-3);
-//     &:hover {
-//         box-shadow: 0px 4px 20px 5px rgba(71, 172, 80, 0.5);
-//     }
-//     &:hover:active {
-//         background-color: var(--btn-6);
-//         border-color: var(--btn-6);
-//     }
-// }
-// // ========  pageUp  ==========
-// // .btn-pageUp {
-// //     display: flex;
-// //     align-items: center;
-// // }
-// // .btn-pageUp__link {
-// //     display: flex;
-// //     align-items: center;
-// //     justify-content: center;
-// //     width: 56px;
-// //     height: 56px;
-// //     border: 1px solid var(--btn-1);
-// //     border-radius: 50%;
-// //     cursor: pointer;
-// //     transition: all .2s ease;
-// // }
-// // .btn-pageUp__icon {
-// //     width: 24px;
-// //     height: 24px;
-// //     pointer-events: none;
-// // }
-// // .btn-pageUp__link:hover {
-// //     border: 1px solid var(--btn-3);
-// // }
-// // .btn-pageUp__text {
-// //     display: none;
-// //     @include from-tablet {
-// //         display: block;
-// //         margin-right: 24px;
-// //         font-size: 24px;
-// //         line-height: 124%;
-// //         color: var(--color-5);
-// //     }
-// // }
+// btn-bg-font/fill-border
+.btn-blue-white-blue {
+    color: var(--btn-1);
+    background-color: var(--btn-3);
+    border-color: var(--btn-3);
+    @media (hover: hover) {
+        &:hover {
+            background-color: var(--btn-4);
+            border-color: var(--btn-4);
+        }
+        &:hover:active {
+            background-color: var(--btn-5);
+            border-color: var(--btn-5);
+        }
+    }
+}
+.btn-white-black-white {
+    color: var(--btn-2);
+    background-color: var(--btn-1);
+    border-color: var(--btn-1);
+    @media (hover: hover) {
+        &:hover {
+            color: var(--btn-4);
+        }
+        &:hover:active {
+            color: var(--btn-5);
+        }
+    }
+}

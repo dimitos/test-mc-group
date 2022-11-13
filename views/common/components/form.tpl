@@ -1,4 +1,4 @@
-{* <form class="form {$class}">
+<form class="form {$class}">
     <div class="input__fields">
         {if $email == "true"}
         <div class="input__fields-item">
@@ -17,7 +17,7 @@
         {if $name == "true"}
         <div class="input__fields-item">
             <label class="input__field input__field-name">
-                <input class="input input-default input-name" type="text" placeholder="Ваше имя ">
+                <input class="input input-default input-name" type="text" placeholder="Алюминиевый сплав">
             </label>
         </div>
         {/if}
@@ -33,5 +33,7 @@
             </p>
         </div>
     {/if}
-    <button class="btn btn-default btn-green-white-green form-btn" type="button">{$btn}</button>
-</form> *}
+    {if $btn == "true"}
+        <button class="btn btn-default form-btn {$btnClass}" type="button">{$btnText}</button>
+    {/if}
+</form>

@@ -1,1 +1,13 @@
-.form {}
+.form__card .input-default {
+    font-size: var(--font-size-medium-mini);
+    @include from-fablet {
+        font-size: var(--font-size-medium);
+    }
+}
+.form__card .input-default::placeholder {
+    font-size: var(--font-size-medium-mini);
+    color: var(--color-4);
+    @include from-fablet {
+        font-size: var(--font-size-medium);
+    }
+}
